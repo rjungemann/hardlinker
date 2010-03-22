@@ -1,6 +1,6 @@
 hardlinker
 	by Roger Jungemann (MIT License)
-	http://github.com/thefifthcircuit/rack_jour
+	http://github.com/thefifthcircuit/hardlinker
 	
 A library for blog software, to allow users to link to other articles and
 media using a simple shorthand inspired by Everything2.com "hardlinks".
