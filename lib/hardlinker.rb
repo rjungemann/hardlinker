@@ -9,12 +9,12 @@ Dir.glob("#{File.dirname(__FILE__)}/linkers/*").each { |lib| require lib }
 module TFCWiki
   class Sluggerizer
     def self.sluggerize string
-      array = string.downcase.gsub(/[^\w]/, "_").gsub(/__+/, "_").split("")
+      str = string.downcase.gsub(/[^\w]/, "_").gsub(/__+/, "_")
 
-      array = array[1..-1] while array.first == "_"
-      array = array[0..-2] while array.last == "_"
+      str = str[1..-1] while str[0] == "_"
+      str = str[0..-2] while str[-1] == "_"
 
-      array.join("")
+      str
     end
   end
   
